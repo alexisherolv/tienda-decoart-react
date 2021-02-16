@@ -1,0 +1,206 @@
+.producto1{
+    padding: 0%;
+}
+
+.sin-borde .container .row{
+    margin: 0;
+    flex-wrap: nowrap;
+}
+.sin-borde .container .row .col-sm{
+    padding: 3px;
+}
+
+.sin-borde .container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.ver-producto .container .row{
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.ver-producto .container-fluid{
+    margin-top: 70px;
+    background-color: #f4f4f4 !important;
+}
+
+.productos-view{
+    background-color: #f4f4f4 !important;
+}
+
+.ordenar .btn{
+    background-color:black !important;
+    color: white !important;
+    border-color: #000000 !important;
+}
+
+.ordenar .btn:hover{
+    background-color:white !important;
+    color: black !important;
+    border-color: #000000 !important;
+}
+
+
+.ordenar{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.sin-borde2 .container-fluid .row{
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.sin-borde2 .container-fluid .row .parejo{
+    flex-wrap: nowrap;
+}
+
+.card:hover{
+    transform: scale(1.0);
+    box-shadow: 0 10px 300px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card{
+    background-color: #f4f4f4 !important;
+    margin: 0px;
+    font-family: 'Montserrat',serif;
+    width: 18rem;
+    padding: 0% !important;
+}
+
+.card-title{
+    margin-bottom: 0px !important;
+}
+
+.categoria-p{
+     font-family: 'Montserrat', serif;
+     margin-top: 30px;
+     font-size: 20px;
+     margin-bottom: 30px;
+}
+
+.categoria-p2{
+    font-family: 'Montserrat', serif;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.card p{
+    color: #B7ACA3;
+    font-size: 15px;
+}
+
+.card-title {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.etiqueta{
+    background-color: #dcc4b4;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.img-prod{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.ordenar .row{
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 2px;
+    border-color: #000000;
+}
+
+.ordenar .btn{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0;
+    font-family: 'Montserrat',serif;
+    font-size: 13px;
+}
+
+.dropdown-menu a{
+    color: black;
+    font-family: 'Montserrat',serif;
+    
+}
+
+.dropdown-menu li{
+    font-size: 13px;  
+}
+
+.boton-desplegable{
+
+}
+
+/*Utilizando queries para ajustar experiencia en moviles*/
+@media (max-width: 575px) {
+    .sin-borde .container .row{
+        flex-wrap: wrap;
+    }
+
+    .sin-borde .container{
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px;
+        text-align: center;
+    }
+
+    .img-prod{
+        margin: 0;
+    }
+
+    .parejo{
+        flex-wrap: nowrap;
+    }
+
+    .etiqueta{
+        background-color: #f4f4f4;
+        color: #000000;
+        text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    .sin-borde .container .row{
+        margin: 0;
+    }
+
+    .sin-borde .container{
+        margin-left: 0;
+        padding-left: 5px;
+    }
+
+    .img-prod{
+        margin: auto;
+    }
+
+    .card-title {
+        margin:0;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .sin-borde .container{
+        margin-left: 0;
+        padding-left: 5px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .sin-borde .container{
+        margin-left: 0;
+        padding-left: 5px;
+    }
+  }

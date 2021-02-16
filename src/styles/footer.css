@@ -1,0 +1,15 @@
+.texto-footer p{
+    font-size: 13px;
+    margin-bottom: 3px;
+    font-family: 'Montserrat',serif;
+}
+
+.iconos-footer{
+    text-align: right;
+}
+
+@media (max-width: 575px) {
+    .texto-footer p{
+        font-size: 10px;
+    }
+}
