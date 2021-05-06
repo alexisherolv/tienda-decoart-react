@@ -94,7 +94,9 @@ function Navbar() {
                     <Link className="nav-link active" aria-current="page" to="/lista-de-deseos">
                         <img src={Corazon} className = "zoom" width="20" height="20" alt="..." />
                     </Link>
-                    <img src={Usuario} className = "zoom" width="20" height="20" alt="..." />
+                    <Link className="nav-link active" aria-current="page" to="/sign-in">
+                        <img src={Usuario} className = "zoom" width="20" height="20" alt="..." />
+                    </Link>
                     <Link className="nav-link active" aria-current="page" to="/carrito-de-compras">
                         <img src={Carrito} className = "zoom" width="20" height="20" alt="..." />
                     </Link>

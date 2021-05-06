@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import "./producto.css";
 
 import CharolaServicio from "./images/charola-servicio.png";
 import LazySusan from "./images/lazy-susan.png";

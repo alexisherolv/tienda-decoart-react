@@ -1,21 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import "./producto.css";
 
-import CharolaServicio from "./images/charola-servicio.png";
-import LazySusan from "./images/lazy-susan.png";
-import MesaCentro from "./images/mesa-centro.png";
-import Portavasos from "./images/portavasos.png";
-import Credenza from "./images/credenza.png";
-import Espejo from "./images/espejo.png";
-import PortallavesGde from "./images/portallaves-gde2.png"
-import Servilletero from "./images/servilletero.png"
-import TablaPicar from "./images/tabla-picar.png"
-import MesaAuxiliar from "./images/mesa-auxiliar2.png"
-import MesaCentro2 from "./images/mesa-centro2.png";
-import Portavasos2 from "./images/portavasos3.png";
-
-class SomeProducts extends React.Component {
+/*class SomeProducts extends React.Component {
     state = {
       productos : [
         {
@@ -167,4 +153,84 @@ class SomeProducts extends React.Component {
     }
 }
 
-export default SomeProducts;
+export default SomeProducts;*/
+
+export default function SomeProducts() {
+    const [products, setProducts] = useState([]);
+
+    /*useEffect(function () {
+        console.log("ENTRE")
+        fetch("http://localhost:5001/v1/productos/", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            }
+        })
+        .then(function(response) {
+            return response.ok ? response.json() : Promise.reject();
+        })
+        .then(function(data) {
+            console.log(Object.values(data));
+            setProducts(Object.values(data));
+            console.log("Productos" + products);
+        })
+        .catch(function(err) {
+            alert("No se pudo consultar la informacion de los productos");
+        });
+    }, []);*/
+
+    useEffect(function () {
+        fetch(`http://localhost:5001/v1/productos/`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            }
+        })
+        .then(function(response) {
+            return response.ok ? response.json() : Promise.reject();
+        })
+        .then(function(data) {
+            console.log(Object.values(data));
+            setProducts(Object.values(data));
+        })
+        .catch(function(err) {
+            alert("No se pudo consultar la informacion de los productos");
+        });
+      }, []);
+
+    return products.length === 0 ? (
+        <h1>Cargando...</h1>
+      ) : (
+        <>     
+        <section className = "sin-borde"> 
+            <div className="container">
+                <div className="row ">
+                    <Card nombre = {products[0].nombre}
+                    precio = {products[0].precio}
+                    etiqueta = {products[0].etiqueta}
+                    imagen = {products[0].fotos[0]}
+                    id = {products[0].id}/>
+
+                    <Card nombre = {products[1].nombre}
+                    precio = {products[1].precio}
+                    etiqueta = {products[1].etiqueta}
+                    imagen = {products[1].fotos[0]}
+                    id = {products[1].id}/>
+
+                    <Card nombre = {products[2].nombre}
+                    precio = {products[2].precio}
+                    etiqueta = {products[2].etiqueta}
+                    imagen = {products[2].fotos[0]}
+                    id = {products[2].id}/>   
+
+                    <Card nombre = {products[3].nombre}
+                    precio = {products[3].precio}
+                    etiqueta = {products[3].etiqueta}
+                    imagen = {products[3].fotos[0]}
+                    id = {products[3].id}/> 
+                </div>
+            </div> 
+        </section>    
+        </>
+    );
+}
