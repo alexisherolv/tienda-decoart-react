@@ -38,10 +38,10 @@ export default function SignUp() {
         <Slides imagen={Slide12}/>
         <div className="row justify-content-center">
         <form className="col-sm-8 mt-4" onSubmit={onSubmitForm}>
-            <h1 className="text-center">Sign up</h1>
+            <h1 className="text-center">Registrarse</h1>
             <p className="text-center">
             <Link className="need-account" to="/sign-in">
-                Have an Account?
+                ¿Ya tienes una cuenta?
             </Link>
             </p>
 

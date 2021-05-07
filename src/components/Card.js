@@ -11,7 +11,7 @@ export default function Card(props){
     }
 
     return(
-        <div class="col-sm producto1">
+        <div className="col-sm producto1">
             <div className="card border-0 margin-0" onClick={onClickProduct}>
                 <div className = "row parejo">
                     <div className="card-body col col-lg-9">

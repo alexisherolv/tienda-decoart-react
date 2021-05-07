@@ -8,6 +8,11 @@
     text-align: right;
 }
 
+.iconos-footer-redes{
+    margin-left:5px;
+    margin-right:5px;
+}
+
 @media (max-width: 575px) {
     .texto-footer p{
         font-size: 10px;

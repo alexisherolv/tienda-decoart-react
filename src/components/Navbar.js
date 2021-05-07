@@ -91,13 +91,13 @@ function Navbar() {
                 </section>
                 <form className="form-inline my-2 my-lg-0 actions justify-content-end">
                     <img src={Lupa} className = "zoom" width="20" height="20" alt="..." onClick={onChangeSearch}/>
-                    <Link className="nav-link active" aria-current="page" to="/lista-de-deseos">
+                    <Link className="nav-link active iconos" aria-current="page" to="/lista-de-deseos">
                         <img src={Corazon} className = "zoom" width="20" height="20" alt="..." />
                     </Link>
-                    <Link className="nav-link active" aria-current="page" to="/sign-in">
+                    <Link className="nav-link active iconos" aria-current="page" to="/sign-in">
                         <img src={Usuario} className = "zoom" width="20" height="20" alt="..." />
                     </Link>
-                    <Link className="nav-link active" aria-current="page" to="/carrito-de-compras">
+                    <Link className="nav-link active iconos" aria-current="page" to="/carrito-de-compras">
                         <img src={Carrito} className = "zoom" width="20" height="20" alt="..." />
                     </Link>
                 </form>

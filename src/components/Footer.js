@@ -24,8 +24,8 @@ function Footer() {
                             <p className="text-uppercase">TÉRMINOS Y CONDICIONES</p>
                         </div>
                         <div className="col-1 iconos-footer">
-                            <img src={Facebook} width="20" height="20" alt="..."/>
-                            <img src={Instagram} width="20" height="20" alt="..."/>
+                            <img src={Facebook} className = "iconos-footer-redes" width="20" height="20" alt="..."/>
+                            <img src={Instagram} className = "iconos-footer-redes" width="20" height="20" alt="..."/>
                         </div>
                     </div>
                 </div>

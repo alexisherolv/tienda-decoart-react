@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/producto.css";
-import Slide8 from "../components/images/S8.png";
+import Slide8 from "../components/images/minislide.png";
 import Slide from "../components/Slides";
 
 import CharolaServicio from "../components/images/charola-servicio.png";

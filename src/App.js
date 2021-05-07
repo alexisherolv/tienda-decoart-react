@@ -21,6 +21,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+require('dotenv').config();
 
 function App() {
   return (

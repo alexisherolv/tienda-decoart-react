@@ -51,6 +51,10 @@
   .zoom:hover {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+
+  .iconos{
+    margin: 0px;
+  }
   
   /*Utilizando queries para ajustar experiencia en moviles*/
 @media (max-width: 575px) {
