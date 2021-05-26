@@ -16,4 +16,4 @@ Como se mencionó anteriormente, por un problema en Heroku no se pudo deployar l
 
 ### Contacto
 
-Cualquier duda con el proyecto escribir al correo (alexisherolv@gmail.com)
+Cualquier duda con el proyecto escribir al correo alexisherolv@gmail.com
