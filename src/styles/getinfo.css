@@ -6,6 +6,14 @@
     padding:0;
 }
 
+.arte-2{
+    padding: 0;
+}
+
+.get-info .container-fluid .row .col-sm-6{
+    padding:0 !important;
+}
+
 /*.get-info .container{
     margin: 0;
     flex-wrap: nowrap;

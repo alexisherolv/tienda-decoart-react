@@ -1,0 +1,48 @@
+.contacto-mensaje{
+    padding-top: 5% !important;
+    padding-bottom: 42% !important;
+}
+
+.contacto-titles h3{
+    font-family: 'Montserrat',serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.contacto-titles p{
+    font-family: 'Montserrat',serif;
+    font-size: 15px;
+}
+
+.contacto-separador{
+    border: 15px !important;
+    border-color: red;
+}
+
+.contacto-main{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.contacto-direccion{
+    margin-top: 25px;
+}
+
+.boton-contacto-enviar{
+    border: 0;
+    background-color: black;
+    border-radius: 0px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Montserrat',serif;
+    font-size: 13px;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.boton-contacto-enviar:hover {
+    background-color: rgb(51, 49, 49);
+}

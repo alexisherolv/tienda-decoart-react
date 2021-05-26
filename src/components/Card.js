@@ -1,7 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-
 export default function Card(props){
     const history = useHistory();
 
@@ -10,15 +9,20 @@ export default function Card(props){
         console.log("props" +props)
     }
 
+    var formatterPeso = new Intl.NumberFormat('es-MX', {
+        style: 'currency',
+        currency: 'MXN'
+    })
+
     return(
-        <div className="col-sm producto1">
-            <div className="card border-0 margin-0" onClick={onClickProduct}>
+        <div className="col-sm">
+            <div className="card border-0" onClick={onClickProduct}>
                 <div className = "row parejo">
-                    <div className="card-body col col-lg-9">
+                    <div className="col-6 info">
                         <h6 className="card-title">{props.nombre.toUpperCase()}</h6>
-                        <p className="card-text">{'$' + props.precio.toLocaleString(['ban','id'])}</p>
+                        <p className="card-text">{formatterPeso.format(props.price)}</p>
                     </div>
-                    <div className="col col-lg-3 etiqueta">
+                    <div className="col-3 etiqueta">
                         NEW
                     </div>
                 </div>

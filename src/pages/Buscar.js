@@ -1,6 +1,5 @@
 import React from "react";
 import Slide from "../components/Slides";
-import Slide6 from "../components/images/S9.png";
 import { BrowserRouter as Router,
     Switch,
     Route,
@@ -11,7 +10,7 @@ export default function(){
     console.log(buscarId);
     return(
         <>
-            <Slide imagen = {Slide6} />
+            <Slide imagen = {process.env.PUBLIC_URL + '/images/S9.png'} />
             <h1>Hola, quiero ver el producto {buscarId}</h1>
         </>
     );

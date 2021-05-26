@@ -1,0 +1,15 @@
+.texto-somos h1{
+    font-family: 'Montserrat',serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.texto-somos{
+    margin-top: 100px;
+}
+
+.texto-somos p{
+    font-family: 'Montserrat',serif;
+    font-size: 20px;
+}

@@ -1,8 +1,5 @@
 import React from "react";
-import Instagram from "./images/facebook.svg";
-import Facebook from "./images/instagram.svg";
 import { Link } from "react-router-dom";
-
 
 function Footer() {
     return(
@@ -10,22 +7,22 @@ function Footer() {
             <footer className="page-footer font-small blue pt-4">
                 <div className="container-fluid text-center text-md-left">
                     <div className="row">
-                        <div className="col-4 texto-footer">
+                        <div className="col-sm-4 texto-footer">
                             <p className="text-uppercase"><strong>DECOART 2021</strong> | TODOS LOS DERECHOS RESERVADOS</p>
-                            <p>CREACIÓN DE SITIO WEB: <strong>ALEXIS HEROLV</strong></p>
+                            <p>POWERED BY: <strong>ALEXIS HEROLV</strong></p>
                         </div>
-                        <div className="col-2 texto-footer">
+                        <div className="col-sm-2 texto-footer">
                             <p className="text-uppercase">TIENDA EN LÍNEA</p>
                         </div>
-                        <div className="col-3 texto-footer">
+                        <div className="col-sm-3 texto-footer">
                             <p className="text-uppercase">POLÍTICA DE PRIVACIDAD</p>
                         </div>
-                        <div className="col-2 texto-footer">
+                        <div className="col-sm-2 texto-footer">
                             <p className="text-uppercase">TÉRMINOS Y CONDICIONES</p>
                         </div>
-                        <div className="col-1 iconos-footer">
-                            <img src={Facebook} className = "iconos-footer-redes" width="20" height="20" alt="..."/>
-                            <img src={Instagram} className = "iconos-footer-redes" width="20" height="20" alt="..."/>
+                        <div className="col-sm-1 iconos-footer">
+                            <img src={process.env.PUBLIC_URL + '/images/facebook.svg'} className = "iconos-footer-redes" width="20" height="20" alt="..."/>
+                            <img src={process.env.PUBLIC_URL + '/images/instagram.svg'} className = "iconos-footer-redes" width="20" height="20" alt="..."/>
                         </div>
                     </div>
                 </div>
