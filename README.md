@@ -8,8 +8,7 @@ En el siguiente link pueden encontrar el proyecto deployado: [https://tienda-dec
 
 ### API
 
-El link del proyecto de la API en GITHUB es el siguiente: [http://localhost:3000](http://localhost:3000)
-Open [https://github.com/alexisherolv/tienda-decoart-api2/](https://github.com/alexisherolv/tienda-decoart-api2/)
+El link del proyecto de la API en GITHUB es el siguiente: [https://github.com/alexisherolv/tienda-decoart-api2/](https://github.com/alexisherolv/tienda-decoart-api2/)
 
 Se utilizó la base de datos de MONGODB. Actualmente hay algunos productos y usuarios en la base de datos de prueba para probar el funcionamiento de la misma mediante los Checkpoints creados.
 
@@ -17,4 +16,4 @@ Como se mencionó anteriormente, por un problema en Heroku no se pudo deployar l
 
 ### Contacto
 
-Cualquier duda con el proyecto escribir al correo [mailto:alexisherolv@gmail.com] (alexisherolv@gmail.com)
+Cualquier duda con el proyecto escribir al correo [alexisherolv@gmail.com] (alexisherolv@gmail.com)
