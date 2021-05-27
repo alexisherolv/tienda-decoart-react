@@ -5,6 +5,10 @@
     font-size: small;
   }
 
+.carrito{
+  margin-left: 0 !important;
+}
+
   .scrolled{
     background-color: black;
   }
