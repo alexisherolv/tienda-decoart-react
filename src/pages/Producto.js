@@ -5,6 +5,7 @@ import { BrowserRouter as Router,
     Route,
     useParams } from "react-router-dom";
 import { useCart } from "react-use-cart";
+import { Link } from "react-router-dom";
 
 
 export default function(){
@@ -60,18 +61,20 @@ export default function(){
                                 <p className="producto-precio">{formatterPeso.format(product.price)}</p>
                                 <div className="row">
                                     <div className="col-sm-9">
-                                        <div className="row">
+                                        <div className="row botones-compra">
                                             <div key = {product.id}>
-                                                <button type="button" className="boton-addtocart" onClick={() => addItem({...product})}>AGREGAR AL CARRITO</button>
-                                            </div>
-                                            <button type="button" className="boton-wish btn_red"><span className="icon"></span></button>
+                                                <Link className="active iconos" aria-current="page" to="/carrito-de-compras">
+                                                    <button type="button" className="boton-addtocart" onClick={() => addItem({...product})}>AGREGAR AL CARRITO</button>
+                                                </Link>
+                                            </div> 
+                                            <button type="button" className="boton-wish"><span className="icon"></span></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="related-products">
-                            <h1>Productos relacionados</h1>
+                            
                         </div>
                     </div>
                 </section>

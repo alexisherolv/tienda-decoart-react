@@ -32,9 +32,9 @@
     }
 
     .get-info .container-fluid .row .arte-2 h1{
-        font-size: 20px;
+        font-size: 50px;
     }
     .get-info .container-fluid .row .arte-2 button{
-        font-size: 8px;
+        font-size: 20px;
     }
 }

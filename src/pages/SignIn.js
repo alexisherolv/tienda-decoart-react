@@ -5,6 +5,7 @@ import "../styles/signin.css";
 
 export default function SignIn() {
   const token = localStorage.getItem("token");
+  const tipo = localStorage.getItem("tipo");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
@@ -13,7 +14,13 @@ export default function SignIn() {
   useEffect(function () {
     if(token!==null)
     {
-      history.push("/profile")
+      if(tipo === "administrador")
+      {
+        history.push("/admin")
+      }
+      else{
+        history.push("/profile")
+      }
       return;
     }
   }, []);
@@ -52,8 +59,14 @@ export default function SignIn() {
         localStorage.setItem("tipo", data.user.tipo);
         localStorage.setItem("token", data.user.token);
         localStorage.setItem("id", data.user.id);
-
-        history.push("/profile");
+        
+        if(data.user.tipo === "administrador")
+        {
+          history.push("/admin");
+        }
+        else{
+          history.push("/profile");
+        }
       }
     });
   }

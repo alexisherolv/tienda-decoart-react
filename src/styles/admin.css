@@ -1,0 +1,15 @@
+.admin h1{
+    font-family: 'Montserrat',serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.admin{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.boton-logout{
+    text-align: center;
+}

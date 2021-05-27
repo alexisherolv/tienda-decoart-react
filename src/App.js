@@ -10,6 +10,8 @@ import "./styles/cart.css";
 import "./styles/slides.css";
 import "./styles/contacto.css";
 import "./styles/somos.css";
+import "./styles/admin.css";
+import "./styles/profile.css";
 import "./styles/interiorismo.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,6 +25,7 @@ import Producto from "./pages/Producto";
 import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
+import Admin from "./pages/Admin";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -54,6 +57,7 @@ function App() {
               <Route exact path="/sign-in" component={SignIn} />
               <Route exact path="/sign-up" component={SignUp} />
               <Route exact path="/profile" component={Profile} />
+              <Route exact path="/admin" component={Admin} />
             </Switch>
           </div>
           <Footer />

@@ -37,7 +37,7 @@ export default function Home() {
         <>
             <Slides imagen = {process.env.PUBLIC_URL + '/images/SLIDE7.png'} />
             
-            <section className = "container-fluid"> 
+            <section className = "container-fluid home-products"> 
                 <div className="card-deck">
                     <Card nombre = {products[0].nombre}
                     price = {products[0].price}

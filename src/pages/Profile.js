@@ -37,9 +37,9 @@ export default function Profile() {
   return (
     <>
         <Slides imagen={process.env.PUBLIC_URL + '/images/S9.png'}></Slides>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center client">
         <div class="col-sm-8 col-md-6">
-            <h1>Your Settings</h1>
+            <h1>Mis datos</h1>
             <div class="form-group">
             <label for="inputUsername"></label>
 
@@ -51,7 +51,7 @@ export default function Profile() {
                 formControlName="username"
                 aria-describedby="usernameHelp"
                 placeholder="Username"
-                value={user.username}
+                value={"Nombre de usuario: " + user.username}
             />
             </div>
             <div class="form-group">
@@ -65,7 +65,7 @@ export default function Profile() {
                 formControlName="email"
                 aria-describedby="emailHelp"
                 placeholder="Email"
-                value={user.email}
+                value={"Email: " + user.email}
             />
             </div>
             <div class="form-group">
@@ -78,22 +78,22 @@ export default function Profile() {
                 name="password"
                 formControlName="password"
                 aria-describedby="passwordHelp"
-                placeholder="New Password"
+                placeholder="Nueva contraseña"
             />
             </div>
             <div class="form-group d-flex justify-content-end">
-            <button type="button" class="btn btn-success mt-3 btn-lg">
-                Update Settings
+            <button type="button" class="boton-update">
+                Actualizar datos
             </button>
             </div>
             <hr />
-            <div class="form-group d-flex justify-content-start">
+            <div class="form-group d-flex justify-content-center">
             <button
                 type="button"
-                class="btn btn-outline-danger mt-3 btn-lg"
+                class="boton-logout"
                 onClick={logout}
             >
-                Or click here to logout
+                Cerrar sesión
             </button>
             </div>
         </div>

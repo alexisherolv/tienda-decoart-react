@@ -32,7 +32,7 @@ export default function Cart()
         <>
           <Slides imagen = {process.env.PUBLIC_URL + '/images/minislide2.png'}/>
           <section className="container">
-            <img className="imagen-vacio" src={process.env.PUBLIC_URL + '/images/carrito-de-compras-3.png'} width="150" height="150" alt="..." />
+            <img className="imagen-vacio" src={process.env.PUBLIC_URL + '/images/carrito-de-compras-3.svg'} width="150" height="150" alt="..." />
             <h1 className="vacio">Tu carrito está vacío</h1>
             <Link aria-current="page" to="/todos-los-productos">
               <p className="vacio-volver">VOLVER A LA TIENDA</p>
@@ -77,7 +77,7 @@ export default function Cart()
                 <ul className="list-group">
                   <li className="list-group-item total">
                     <h2 className="titulo-total">Total del carrito</h2>
-                    <hr className="separador"/>
+                    <hr />
                   </li>
                   <li className="list-group-item total">
                     <div className="row">

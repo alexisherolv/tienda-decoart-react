@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Buscador from "./Buscador";
-
 import { Link } from "react-router-dom";
+import { CartProvider, useCart } from "react-use-cart";
 
 function Navbar() {
     const [search, setSearch] = useState(false);
@@ -17,6 +17,13 @@ function Navbar() {
           setScrolled(false);
         }
       }
+    const {
+        isEmpty,
+        totalUniqueItems,
+        items,
+        updateItemQuantity,
+        removeItem,
+    } = useCart();
 
     useEffect(() => {
         window.addEventListener('scroll',handleScroll)
@@ -84,7 +91,7 @@ function Navbar() {
                 <section>
                     {buscador}
                 </section>
-                <form className="form-inline my-2 my-lg-0 actions justify-content-end">
+                <form className="form-inline my-2 my-lg-0 actions justify-content-center">
                     <img src={process.env.PUBLIC_URL + '/images/lupa.svg'} className = "zoom" width="20" height="20" alt="..." onClick={onChangeSearch}/>
                     <Link className="nav-link active iconos" aria-current="page" to="/lista-de-deseos">
                         <img src={process.env.PUBLIC_URL + '/images/corazon.svg'} className = "zoom" width="20" height="20" alt="..." />
@@ -92,9 +99,13 @@ function Navbar() {
                     <Link className="nav-link active iconos" aria-current="page" to="/sign-in">
                         <img src={process.env.PUBLIC_URL + '/images/usuario.svg'} className = "zoom" width="20" height="20" alt="..." />
                     </Link>
-                    <Link className="nav-link active iconos" aria-current="page" to="/carrito-de-compras">
-                        <img src={process.env.PUBLIC_URL + '/images/carrito-de-compras-2.svg'} className = "zoom" width="22" height="22" alt="..." />
-                    </Link>
+                    <div className="carrito">
+                        <Link className="nav-link active iconos" aria-current="page" to="/carrito-de-compras">
+                            <img src={process.env.PUBLIC_URL + '/images/carrito-de-compras-2.svg'} className = "zoom" width="22" height="22" alt="..." />
+                            <div class="texto-encima justify-content-end">{items.length}</div>
+                        </Link>
+                        
+                    </div>
                 </form>
                 </div>
             </nav>

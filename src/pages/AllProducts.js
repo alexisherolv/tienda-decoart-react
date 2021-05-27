@@ -34,20 +34,18 @@ export default function AllProducts(){
             <Slides imagen = {process.env.PUBLIC_URL + '/images/slide-prod2.png'} />
             <section className="container ordenar">
                 <h3 className="categoria-p">TODOS LOS PRODUCTOS</h3>
-                <div className="container">
-                    <div className="row border">
-                        <div className="col-3">
-                            <h5 className="categoria-p2">ORDENAR POR:</h5>
-                        </div>
-                        <div className="col-2">
-                            <div className="dropdown">
-                            <button className="btn btn-primary dropdown-toggle boton-desplegable" type="button" data-toggle="dropdown">Orden por defecto
-                            <span className="caret"></span></button>
-                            <ul className="dropdown-menu">
-                                <li><a href="#" id="menor-mayor">Ordenar por precio: bajo a alto</a></li>
-                                <li><a href="#" id="mayor-menor">Ordenar por precio: alto a bajo</a></li>
-                            </ul>
-                            </div>
+                <div className="row ">
+                    <div className="col-sm-3">
+                        <h5 className="categoria-p2">ORDENAR POR:</h5>
+                    </div>
+                    <div className="col-sm-2">
+                        <div className="dropdown">
+                        <button className="btn btn-primary dropdown-toggle boton-desplegable" type="button" data-toggle="dropdown">Orden por defecto
+                        <span className="caret"></span></button>
+                        <ul className="dropdown-menu">
+                            <li><a href="#" id="menor-mayor">Ordenar por precio: bajo a alto</a></li>
+                            <li><a href="#" id="mayor-menor">Ordenar por precio: alto a bajo</a></li>
+                        </ul>
                         </div>
                     </div>
                 </div>

@@ -147,6 +147,18 @@
     color: black;
 }
 
+.carrito{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
 @media (max-width: 575px) {
     .cart-principal .container .row .col-sm-4{
         padding: 0 !important;
